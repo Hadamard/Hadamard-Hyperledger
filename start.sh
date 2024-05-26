@@ -1,3 +1,14 @@
+cd;
+cd Hadamard-Hyperledger;
+make stop;
+make reset;
+make clean;                         
+make deep-clean;                      
+make docker-clean;
+rm -r /root/Hadamard-Hyperledger;
+cd;
+git clone https://github.com/Hadamard/Hadamard-Hyperledger.git;
+cd Hadamard-Hyperledger;
 make api-engine;
 make docker-rest-agent;
 make dashboard;
